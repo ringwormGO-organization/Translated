@@ -1,0 +1,20 @@
+#include <iostream>
+
+class Class
+{
+	public:
+		int number = 11;
+};
+
+int main(int argc, char **argv)
+{
+	cout << argv[0] << endl;
+
+	Class Test;
+	cout << Test.number << endl;
+
+	cout << "\n";
+
+	system("pause");
+	return 0;
+}
