@@ -4,11 +4,11 @@ Simple library which translate most of C++ keywords and function  to Croatian.
 Jednostavna knjižnica koja prevodi većinu ključnih riječi i funkcija C++ riječi na hrvatski.
 
 ## Repo structure - Struktura repo-a
-[Visual Studio 2019 example/primjer](https://github.com/ringwormGO-organization/Translated/tree/main/Translated)
+[Visual Studio 2019 example/primjer](https://github.com/ringwormGO-organization/Translated/tree/main/Translated-VS)
 
 [G++ Windows and Linux example | G++ Windows i Linux primjer](https://github.com/ringwormGO-organization/Translated/tree/main/Translated-Win-Linux)
 
-[Classical C++ program | Klasični C++ program](https://github.com/ringwormGO-organization/Translated/blob/main/Translated/Translated/standard.txt)
+[Classical C++ program | Klasični C++ program](https://github.com/ringwormGO-organization/Translated/blob/main/Translated-VS/Translated/standard.txt)
 
 ## Use in C programming language - Korištenje u programskom jeziku C
 Rename `Translated.hpp` into `Translated.h`, you may need to remove classes.
