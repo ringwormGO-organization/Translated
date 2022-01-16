@@ -1,7 +1,7 @@
 # Translated
-Simple library which translate C++ keywords to Croatian.
+Simple library which translate most of C++ keywords and function  to Croatian.
 
-Jednostavna knjižnica koja prevodi ključne C++ riječi na hrvatski.
+Jednostavna knjižnica koja prevodi većinu ključnih riječi i funkcija C++ riječi na hrvatski.
 
 ## Repo structure - Struktura repo-a
 [Visual Studio 2019 example/primjer](https://github.com/ringwormGO-organization/Translated/tree/main/Translated)
@@ -16,7 +16,7 @@ Rename `Translated.hpp` into `Translated.h`, you may need to remove classes.
 Preimenujte `Translated.hpp` u `Translated.h`, možda ćete morati ukloniti klase
 
 ## Checklist - Lista
-- [ ] Translate most of keywords - Preimenovati većinu ključnih riječi
+- [x] Translate most of keywords - Preimenovati većinu ključnih riječi
 - [x] C support - Podrška za C programski jezik
 
 **Preprocessor commands are not translated!!** | **Pretprocesorske naredbe nisu prevedene!!**
@@ -34,10 +34,24 @@ Ako imate problem s ovom knjižnicom, napravite problem, isue.
 
 ## Use of this library - Korištenje ove knjižnice
 
+Download `Translate.hpp`, copy inside your work directory and include it by `#include "Translated.hpp"`
+
+Skinite `Translate.hpp`, kopirate unutar radne mape i unesite je u projekt pomoću `#include "Translate.hpp`
+
+-------------------------------------
+
+For now here is only capital letters. You can change it by yourself.
+
+Za sada su ovdje samo velika slova. Možete to promijeniti sami.
+
+## Translated stuff - Prevođene stvari
 ### Start of program - Početak programa
 1. `POCETAK_PROGRAMA` int main() {
 2. `POCETAK_PROGRAMA_ARGUMENTI` int main(int argc, char **argv) {
 3. `KRAJ_PROGRAMA` return 0; }
+
+### void function - void funcija
+1. `FUNKCIJA` void *```//function don't return any type```*
 
 ### Variables - Varijable
 1. `BROJ` integer
@@ -45,16 +59,48 @@ Ako imate problem s ovom knjižnicom, napravite problem, isue.
 3. `REALNI` float
 4. `KRATKI` short
 5. `ZNAK` char
-6. `ZNAKOVNI_NIZ` string *if don't work, include string library or try `std::ZNAKOVNI_NIZ`*
+6. `ZNAKOVNI_NIZ1` const char*
+7. `ZNAKOVNI_NIZ2` string *if don't work, include string library or try `std::ZNAKOVNI_NIZ`*
+8. 
+9. `TOCNO_NETOCNO` bool
+10. 
+11. `TIP_DEFINICIJE` typedef
+12. `STALNA` const
 
-### Enums, structs, classes - Enumi, struct-ovi i klase
+### Enums, structs, classes, namespaces - Enumi, struct-ovi, klase, imena područja
 1. `ENUM` enum
 2. `SLOG` struct
-3. `KLASA` class
+3. `union` unija
+4. `KLASA` class
+5. 
+6. `IMENO_PODRUCJE` namespace
+7. `KORISTI` using
+8. 
+9. `JAVNO` public
+10. `ZASTICENO` protected
+11. `PRIVATNO` private
+12. 
+13. `VIRTUALNO` virtual
+
+### if, else, switch - ako, inače, switch
+1. `AKO` if
+2. `AKO2` else if
+3. `INACE` else
 4. 
-5. `JAVNO` public
-6. `ZASTICENO` protected
-7. `PRIVATNO` private
+5. `SKLOPKA` switch
+6. `SLUCAJ` case
+
+### Loops - Petlje
+1. `UCINI_DOK` do
+2. `DOK` while
+3. `ZA` for
+4. 
+5. `NASTAVI` continue
+6. `PREKINI` break
+
+### Other - Ostalo
+1. `AUTOMATSKI` auto
+2. `UHVATI` catch
 
 ### Printing and user input - Ispis teksta i korisnički unos
 1. `PRINTAJ1` cout *`include <iostream>`*
@@ -62,3 +108,13 @@ Ako imate problem s ovom knjižnicom, napravite problem, isue.
 3. 
 4. `UNESI1` cin *`include <iostream>`*
 5. `UNESI2` scanf *`include <stdio.h>`*
+
+### Functions - Funkcije
+1. `SUSTAV` system
+
+### Memory - Memorija
+1. `NOVO` new
+2. `IZBRISI` delete
+3. `ALOCIRAJ` malloc
+4. `PONOVO_ALOCIRAJ` realloc
+5. `OSLOBODI` free
