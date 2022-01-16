@@ -1,0 +1,55 @@
+Class-example.cpp:
+
+#include <iostream>
+#include "Class-example.hpp"
+
+Square square;
+Rectangle rectangle;
+
+void Square_Extent()
+{
+	std::cout << "Type a length of side: " << std::endl;
+	std::cin >> square.side;
+
+	std::cout << "Extent of square is: " << square.side * 4 << std::endl;
+}
+
+void Rectangle_Extent()
+{
+	std::cout << "Type a length of first side: " << std::endl;
+	std::cin >> rectangle.side1;
+
+	std::cout << "Type a length of second side: " << std::endl;
+	std::cin >> rectangle.side2;
+
+	rectangle.Extent = rectangle.side1 * 2 + rectangle.side2 * 2;
+
+	std::cout << "Extent of square is: " << rectangle.Extent << std::endl;
+}
+
+-------------------------------------------------------------------------------
+
+main.cpp
+
+#include <iostream>
+#include <cstdlib>
+
+#include "Translated.hpp"
+#include "Class-example.hpp"
+
+using namespace std;
+
+int main(int argc, char **argv) 
+{
+
+	cout << "Square" << endl;
+	Square_Extent();
+	cout << "-----------------" << endl;
+
+	cout << "Rectangle" << endl;
+	Rectangle_Extent();
+
+	SUSTAV("pause");
+	return 0;
+
+}
