@@ -34,9 +34,9 @@ Ako imate problem s ovom knjižnicom, napravite problem, isue.
 
 ## Use of this library - Korištenje ove knjižnice
 
-Download `Translate.hpp`, copy inside your work directory and include it by `#include "Translated.hpp"`
+[Download](https://github.com/ringwormGO-organization/Translated/releases/tag/v1.0.0) `Translate.hpp`, unzip it, copy inside your work directory and include it by `#include "Translated.hpp"`
 
-Skinite `Translate.hpp`, kopirate unutar radne mape i unesite je u projekt pomoću `#include "Translate.hpp`
+[Skinite](https://github.com/ringwormGO-organization/Translated/releases/tag/v1.0.0) `Translate.hpp`, raspakirajte, kopirajte unutar radne mape i unesite je u projekt pomoću `#include "Translate.hpp`
 
 -------------------------------------
 
