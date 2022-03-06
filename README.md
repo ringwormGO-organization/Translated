@@ -8,8 +8,6 @@ Jednostavna knjižnica koja prevodi većinu ključnih riječi i funkcija C++ rij
 
 [G++ Windows and Linux example | G++ Windows i Linux primjer](https://github.com/ringwormGO-organization/Translated/tree/main/Translated-Win-Linux)
 
-[Classical C++ program | Klasični C++ program](https://github.com/ringwormGO-organization/Translated/blob/main/Translated-VS/Translated/standard.txt)
-
 ## Use in C programming language - Korištenje u programskom jeziku C
 Rename `Translated.hpp` into `Translated.h`, you may need to remove classes.
 
@@ -34,9 +32,9 @@ Ako imate problem s ovom knjižnicom, napravite problem, isue.
 
 ## Use of this library - Korištenje ove knjižnice
 
-[Download](https://github.com/ringwormGO-organization/Translated/releases/tag/v1.0.0) `Translate.hpp`, unzip it, copy inside your work directory and include it by `#include "Translated.hpp"`
+[Download](https://github.com/ringwormGO-organization/Translated/releases/tag/v2.0.0) `Translate.hpp`, unzip it, copy inside your work directory and include it by `#include "Translated.hpp"`
 
-[Skinite](https://github.com/ringwormGO-organization/Translated/releases/tag/v1.0.0) `Translate.hpp`, raspakirajte, kopirajte unutar radne mape i unesite je u projekt pomoću `#include "Translate.hpp`
+[Skinite](https://github.com/ringwormGO-organization/Translated/releases/tag/v2.0.0) `Translate.hpp`, raspakirajte, kopirajte unutar radne mape i unesite je u projekt pomoću `#include "Translate.hpp`
 
 -------------------------------------
 
