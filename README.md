@@ -45,6 +45,11 @@ For now here is only capital letters. You can change it by yourself.
 Za sada su ovdje samo velika slova. Možete to promijeniti sami.
 
 ## Translated stuff - Prevođene stvari
+If you want include header files in Translated.hpp or use non-capital translation, enable or disable settings. | Ako želite unijeti header datoteke ili koristi prijevod koji ne koristi velika slova za prijevod, provjerite postavke.
+
+### Settings
+1. `INCLUDE_HEADER_FILES` unesi header datoteke
+2. `USE_NON_CAPITAL` koristi prijevod koji ne koristi velika slova
 ### Start of program - Početak programa
 1. `POCETAK_PROGRAMA` int main() {
 2. `POCETAK_PROGRAMA_ARGUMENTI` int main(int argc, char **argv) {
@@ -82,6 +87,9 @@ Za sada su ovdje samo velika slova. Možete to promijeniti sami.
 12. 
 13. `VIRTUALNO` virtual
 
+### std::map
+1. `MAPA` std::map
+
 ### if, else, switch - ako, inače, switch
 1. `AKO` if
 2. `AKO2` else if
@@ -101,6 +109,7 @@ Za sada su ovdje samo velika slova. Možete to promijeniti sami.
 ### Other - Ostalo
 1. `AUTOMATSKI` auto
 2. `UHVATI` catch
+3. `VRATI` return
 
 ### Printing and user input - Ispis teksta i korisnički unos
 1. `PRINTAJ1` cout *`include <iostream>`*
@@ -111,6 +120,7 @@ Za sada su ovdje samo velika slova. Možete to promijeniti sami.
 
 ### Functions - Funkcije
 1. `SUSTAV` system
+2. `C_ZNAKOVNI_NIZ` c_str
 
 ### Memory - Memorija
 1. `NOVO` new
