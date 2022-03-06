@@ -1,7 +1,4 @@
-﻿  Class-example.cpp
-E:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\Andrej\Translated\Translated-VS\Translated\Class-example.hpp(18,3): warning C4091: 'typedef ': ignored on left of 'Rectangle' when no variable is declared
-  main.cpp
-E:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\Andrej\Translated\Translated-VS\Translated\Class-example.hpp(18,3): warning C4091: 'typedef ': ignored on left of 'Rectangle' when no variable is declared
-  Generating Code...
-  Translated.vcxproj -> E:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\Andrej\Translated\Translated-VS\x64\Debug\Translated.exe
-C:\src\vcpkg\scripts\buildsystems\msbuild\vcpkg.targets(199,5): warning : [vcpkg] Failed to gather app local DLL dependencies, program may not run. Set VcpkgApplocalDeps to false in your project file to suppress this warning. PowerShell arguments: -ExecutionPolicy Bypass -noprofile -File "C:\src\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "E:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\Andrej\Translated\Translated-VS\x64\Debug\Translated.exe" "C:\src\vcpkg\installed\\x64-windows\debug\bin" "x64\Debug\Translated.tlog\Translated.write.1u.tlog" "x64\Debug\vcpkg.applocal.log"
+﻿  main.cpp
+D:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\GitHub\Translated\Translated-VS\Translated\Translated.hpp(145,1): warning C4005: 'pocetak_programa': macro redefinition
+D:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\GitHub\Translated\Translated-VS\Translated\Translated.hpp(35): message : see previous definition of 'pocetak_programa'
+  Translated.vcxproj -> D:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\GitHub\Translated\Translated-VS\x64\Debug\Translated.exe
