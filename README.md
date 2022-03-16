@@ -57,7 +57,7 @@ If you want include header files in Translated.hpp or use non-capital translatio
 1. `FUNKCIJA` void *```//function don't return any type```*
 
 ### Variables - Varijable
-1. `BROJ` integer
+1. `CIJELI` integer
 2. `DUPLO` double
 3. `REALNI` float
 4. `KRATKI` short
