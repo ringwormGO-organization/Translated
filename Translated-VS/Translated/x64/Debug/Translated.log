@@ -1,4 +1,0 @@
-﻿  main.cpp
-D:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\GitHub\Translated\Translated-VS\Translated\Translated.hpp(145,1): warning C4005: 'pocetak_programa': macro redefinition
-D:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\GitHub\Translated\Translated-VS\Translated\Translated.hpp(35): message : see previous definition of 'pocetak_programa'
-  Translated.vcxproj -> D:\AndrejBackup\Andrej\PRIVATNO-duboko\Ostali\RingwormGo\RingwormGO\GitHub\Translated\Translated-VS\x64\Debug\Translated.exe
