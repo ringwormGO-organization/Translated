@@ -14,17 +14,19 @@
 #define USE_NON_CAPITAL
 
 #ifdef INCLUDE_HEADER_FILES
-	#include <iostream>
-	#include <string>
-	#include <map>
+	#ifdef __cplusplus
+		#include <iostream>
+		#include <string>
+		#include <map>
+	#endif
 
 	#include <stdio.h>
 	#include <stdlib.h>
 #endif
 
 #define MAJOR 2
-#define MINOR 0
-#define PATCH 1
+#define MINOR 1
+#define PATCH 0
 #define VERSION "v" MAJOR "." MINOR "." PATCH
 
 /* ---------------         --------------- */
@@ -56,8 +58,7 @@
 #define DUGO long
 #define KRATKI short
 #define ZNAK char
-#define ZNAKOVNI_NIZ1 const char*
-#define ZNAKOVNI_NIZ2 std::string
+#define STRING std::string
 #define TOCNO_NETOCNO bool
 
 #ifdef USE_NON_CAPITAL
@@ -67,8 +68,7 @@
 	#define dugo long
 	#define kratki short
 	#define znak char
-	#define znakovni_niz1 const char*
-	#define znakovni_niz2 std::string
+	#define string std::string
 	#define tocno_netocno bool
 #endif
 
@@ -84,36 +84,45 @@
 #define ENUM enum
 #define SLOG struct
 #define UNIJA union
-#define KLASA class
 
-#define IMENO_PODRUCJE namespace
-#define KORISTI using
+#ifdef __cplusplus
+	#define KLASA class
+	#define IMENO_PODRUCJE namespace
+	#define KORISTI using
 
-#define JAVNO public
-#define ZASTICENO protected
-#define PRIVATNO private
+	#define JAVNO public
+	#define ZASTICENO protected
+	#define PRIVATNO private
 
-#define VIRTUALNO virtual
+	#define VIRTUALNO virtual
+#endif
 
 #ifdef USE_NON_CAPITAL
 	#define slog struct
 	#define unija union
-	#define klasa class
-	#define imeno_podrucje namespace
-	#define korsiti using
 
-	#define javno public
-	#define zasticeno protected
-	#define privatno private
+	#ifdef __cplusplus
+		#define klasa class
+		#define imeno_podrucje namespace
+		#define korsiti using
 
-	#define virtualno virtual
+		#define javno public
+		#define zasticeno protected
+		#define privatno private
+
+		#define virtualno virtual
+	#endif
 #endif
 
 /* std::map */
-#define MAPA std::map
+#ifdef __cplusplus
+	#define MAPA std::map
+#endif
 
 #ifdef USE_NON_CAPITAL
-	#define mapa std::map
+	#ifdef __cplusplus
+		#define mapa std::map
+	#endif
 #endif
 
 /* if, else, switch - uvjeti */
@@ -142,7 +151,7 @@
 #define PREKINI break
 
 #ifdef USE_NON_CAPITAL
-	#define pocetak_programa ucini_dok do
+	#define ucini_dok do
 	#define dok while
 	#define za for
 
@@ -151,60 +160,94 @@
 #endif
 
 /* other - drugo */
-#define AUTOMATSKI auto
-#define UHVATI catch
+#ifdef __cplusplus
+	#ifdef __cplusplus
+		#define AUTOMATSKI auto
+		#define POKUSAJ try
+		#define UHVATI catch
+	#endif
+#endif
+
 #define VRATI return
 
 #ifdef USE_NON_CAPITAL
-	#define automatski auto
-	#define uhvati catch
+	#ifdef __cplusplus
+		#define automatski auto
+		#define pokusaj try
+		#define uhvati catch
+	#endif
+
 	#define vrati return
 #endif
 
 /* printing and user input function - ispis i unos podataka */
-#define PRINTAJ1 std::cout // #include <iostream>
-#define PRINTAJ2 printf // #include <stdio.h>
+#ifdef __cplusplus
+	#define CPP_ISPIS std::cout // #include <iostream>
+#endif
+#define C_ISPIS printf // #include <stdio.h>
 
 #ifdef USE_NON_CAPITAL
-	#define printaj1 std::cout // #include <iostream>
-	#define printaj2 printf // #include <stdio.h>
+	#ifdef __cplusplus
+		#define cpp_ispis std::cout // #include <iostream>
+	#endif
+	#define c_ispis printf // #include <stdio.h>
 #endif
 
-#define ZAVRSI_LINIJU std::endl; // #include <iostream>
-#define ZAVRSI_LINIJU_ZNAK '\n';
-
-#ifdef USE_NON_CAPITAL
-	#define zavrsi_liniju std::endl; // #include <iostream>
-	#define zavrsi_liniju_znak '\n';
+#ifdef __cplusplus
+	#define ZAVRSI_LINIJU std::endl; // #include <iostream>
 #endif
 
-#define UNESI1 std::cin // #include <iostream>
-#define UNESI2 scanf // #include <stdio.h>
+#ifdef USE_NON_CAPITAL
+	#ifdef __cplusplus
+		#define zavrsi_liniju std::endl; // #include <iostream>
+	#endif
+#endif
+
+#ifdef __cplusplus
+	#define CPP_UNESI std::cin // #include <iostream>
+#endif
+
+#define C_UNESI scanf // #include <stdio.h>
 
 #ifdef USE_NON_CAPITAL
-	#define unesi1 std::cin // #include <iostream>
-	#define unesi2 scanf // #include <stdio.h>
+	#ifdef __cplusplus
+		#define cpp_unesi std::cin // #include <iostream>
+	#endif
+
+	#define c_unesi scanf // #include <stdio.h>
 #endif
 
 /* functions - funckcije */
 #define SUSTAV system
-#define C_ZNAKOVNI_NIZ c_str
+
+#ifdef __cplusplus
+	#define PRETVORI_U_C_STR c_str
+#endif
 
 #ifdef USE_NON_CAPITAL
 	#define sustav system
-	#define c_znakovni_niz c_str
+
+	#ifdef __cplusplus
+		#define pretvori_u_c_str c_str
+	#endif
 #endif
 
 /* memory - memorija */
-#define NOVO new
-#define IZBRISI delete
+#ifdef __cplusplus
+	#define NOVO new
+	#define IZBRISI delete
+#endif
+
 #define ALOCIRAJ malloc
 #define PONOVO_ALOCIRAJ realloc
 #define OSLOBODI free
 
 #ifdef USE_NON_CAPITAL
-	#define novo new
-	#define izbrisi delete
+	#ifdef __cplusplus
+		#define novo new
+		#define izbrisi delete
+	#endif
+
 	#define alociraj malloc
 	#define ponovo_alociraj realloc
 	#define oslobodi free
