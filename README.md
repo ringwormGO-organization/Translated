@@ -45,8 +45,6 @@ For now here is only capital letters. You can change it by yourself.
 
 Za sada su ovdje samo velika slova. Možete to promijeniti sami.
 
-## Needed progress for 3rd version - Potreban napredak za treću verziju
-
 ## Translated stuff - Prevođene stvari
 If you want include header files in Translated.hpp or use non-capital translation, enable or disable settings. | Ako želite unijeti header datoteke ili koristi prijevod koji ne koristi velika slova za prijevod, provjerite postavke.
 
