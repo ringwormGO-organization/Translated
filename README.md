@@ -45,6 +45,10 @@ For now here is only capital letters. You can change it by yourself.
 
 Za sada su ovdje samo velika slova. Možete to promijeniti sami.
 
+## Needed progress for 3rd version - Potreban napredak za treću verziju
+- [ ] Translate `map` and `vector` fully - U potpunosti prevesti `map` i `vector`
+- [ ] Translate C for Plan9 - Prevesti C za Plan9
+
 ## Translated stuff - Prevođene stvari
 If you want include header files in Translated.hpp or use non-capital translation, enable or disable settings. | Ako želite unijeti header datoteke ili koristi prijevod koji ne koristi velika slova za prijevod, provjerite postavke.
 
@@ -65,13 +69,15 @@ If you want include header files in Translated.hpp or use non-capital translatio
 3. `REALNI` float
 4. `KRATKI` short
 5. `ZNAK` char
-6. `ZNAKOVNI_NIZ1` const char*
-7. `ZNAKOVNI_NIZ2` string *if don't work, include string library or try `std::ZNAKOVNI_NIZ`*
-8. 
-9. `TOCNO_NETOCNO` bool
-10. 
-11. `TIP_DEFINICIJE` typedef
-12. `STALNA` const
+6. `ZNAKOVNI_NIZ` string *if don't work, include string library or try `std::ZNAKOVNI_NIZ`*
+7. 
+8. `TOCNO_NETOCNO` bool
+9. 
+10. `TIP_DEFINICIJE` typedef
+11. `STALNA` const
+12. `STATICNO` static
+13. `VELICINA` sizeof
+14. `STALAN_IZRAZ` constexpr
 
 ### Enums, structs, classes, namespaces - Enumi, struct-ovi, klase, imena područja
 1. `ENUM` enum
@@ -87,9 +93,6 @@ If you want include header files in Translated.hpp or use non-capital translatio
 11. `PRIVATNO` private
 12. 
 13. `VIRTUALNO` virtual
-
-### std::map
-1. `MAPA` std::map
 
 ### if, else, switch - ako, inače, switch
 1. `AKO` if
@@ -107,21 +110,12 @@ If you want include header files in Translated.hpp or use non-capital translatio
 5. `NASTAVI` continue
 6. `PREKINI` break
 
-### Other - Ostalo
-1. `AUTOMATSKI` auto
-2. `UHVATI` catch
-3. `VRATI` return
-
 ### Printing and user input - Ispis teksta i korisnički unos
-1. `PRINTAJ1` cout *`include <iostream>`*
-2. `PRINTAJ2` printf *`include <stdio.h>`*
+1. `CPP_PRINTAJ` cout *`include <iostream>`*
+2. `C_PRINTAJ` printf *`include <stdio.h>`*
 3. 
-4. `UNESI1` cin *`include <iostream>`*
-5. `UNESI2` scanf *`include <stdio.h>`*
-
-### Functions - Funkcije
-1. `SUSTAV` system
-2. `C_ZNAKOVNI_NIZ` c_str
+4. `CPP_UNESI` cin *`include <iostream>`*
+5. `C_UNESI` scanf *`include <stdio.h>`*
 
 ### Memory - Memorija
 1. `NOVO` new
@@ -129,3 +123,26 @@ If you want include header files in Translated.hpp or use non-capital translatio
 3. `ALOCIRAJ` malloc
 4. `PONOVO_ALOCIRAJ` realloc
 5. `OSLOBODI` free
+
+### std::
+1. `MAPA` std::map
+2. `VEKTOR` std::vector
+3. `STD_FUNKCIJA` std::function
+
+### Other - Ostalo
+1. `POKUSAJ` try
+2. `UHVATI` catch
+3. `AUTOMATSKI` auto
+4. `VRATI` return
+
+### Functions - Funkcije
+1. `SUSTAV` system
+2. `C_ZNAKOVNI_NIZ` c_str
+3. `STR_KOPIRAJ` strcpy
+4. `STR_USPOREDI` strcmp
+5. `STR_DULJINA` strlen
+
+### C++ 20
+1. `UVEZI` import
+2. `IZVEZI` export
+3. `MODUL` module

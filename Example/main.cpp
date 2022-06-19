@@ -2,30 +2,33 @@
 
 KORISTI IMENO_PODRUCJE std;
 
-ZNAKOVNI_NIZ2 unos;
+ZNAKOVNI_NIZ unos;
 
-MAPA<ZNAKOVNI_NIZ2, znakovni_niz2> test =
+MAPA<ZNAKOVNI_NIZ, ZNAKOVNI_NIZ> test =
 {
 	{"jedan", "dva"}
 };
 
 POCETAK_PROGRAMA_ARGUMENTI
 
-	PRINTAJ1 << "Unesi rijec za pretrazivanje: ";
+	cpp_ispis << "Unesi rijec za pretrazivanje: ";
 
-	UNESI1 >> unos;
+	cpp_unesi >> unos;
 
-	AUTOMATSKI rezultat = test.find(unos);
+	automatski rezultat = test.find(unos);
 
 	ako (rezultat != test.end())
 	{
-		PRINTAJ1 << "Nasao: " << rezultat->first << " i " << rezultat->second << "." << ZAVRSI_LINIJU_ZNAK;
-	}
-	inace
-	{
-		PRINTAJ1 << "Nista nije pronadjeno!" << ZAVRSI_LINIJU;
+		cpp_ispis << "Nasao: " << rezultat->first << " i " << rezultat->second << "." << '\n';
 	}
 
-	SUSTAV("pause");
+	inace
+	{
+		cpp_ispis << "Nista nije pronadjeno!" << ZAVRSI_LINIJU;
+	}
+
+	znak kraj;
+
+	c_unesi("%c", kraj);
 
 KRAJ_PROGRAMA

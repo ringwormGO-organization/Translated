@@ -18,6 +18,8 @@
 		#include <iostream>
 		#include <string>
 		#include <map>
+		#include <vector>
+		#include <functional>
 	#endif
 
 	#include <stdio.h>
@@ -25,7 +27,7 @@
 #endif
 
 #define MAJOR 2
-#define MINOR 1
+#define MINOR 2
 #define PATCH 0
 #define VERSION "v" MAJOR "." MINOR "." PATCH
 
@@ -58,7 +60,7 @@
 #define DUGO long
 #define KRATKI short
 #define ZNAK char
-#define STRING std::string
+#define ZNAKOVNI_NIZ std::string
 #define TOCNO_NETOCNO bool
 
 #ifdef USE_NON_CAPITAL
@@ -68,16 +70,28 @@
 	#define dugo long
 	#define kratki short
 	#define znak char
-	#define string std::string
+	#define znakovni_niz std::string
 	#define tocno_netocno bool
 #endif
 
 #define TIP_DEFINICIJE typedef
 #define STALNA const
+#define STATICNO static
+#define VELICINA sizeof
+
+#ifdef __cplusplus
+	#define STALAN_IZRAZ constexpr
+#endif
 
 #ifdef USE_NON_CAPITAL
 	#define tip_defenicije typedef
 	#define stalna const
+	#define staticno const
+	#define velicina sizeof
+
+	#ifdef __cplusplus
+		#define stalan_izraz constexpr
+	#endif
 #endif
 
 /* enums, structs, classes, namespaces - slogovi, klase */
@@ -90,9 +104,9 @@
 	#define IMENO_PODRUCJE namespace
 	#define KORISTI using
 
-	#define JAVNO public
-	#define ZASTICENO protected
-	#define PRIVATNO private
+	#define JAVNO public:
+	#define ZASTICENO protected:
+	#define PRIVATNO private:
 
 	#define VIRTUALNO virtual
 #endif
@@ -106,22 +120,11 @@
 		#define imeno_podrucje namespace
 		#define korsiti using
 
-		#define javno public
-		#define zasticeno protected
-		#define privatno private
+		#define javno public:
+		#define zasticeno protected:
+		#define privatno private:
 
 		#define virtualno virtual
-	#endif
-#endif
-
-/* std::map */
-#ifdef __cplusplus
-	#define MAPA std::map
-#endif
-
-#ifdef USE_NON_CAPITAL
-	#ifdef __cplusplus
-		#define mapa std::map
 	#endif
 #endif
 
@@ -157,27 +160,6 @@
 
 	#define nastavi continue
 	#define prekini break
-#endif
-
-/* other - drugo */
-#ifdef __cplusplus
-	#ifdef __cplusplus
-		#define AUTOMATSKI auto
-		#define POKUSAJ try
-		#define UHVATI catch
-	#endif
-#endif
-
-#define VRATI return
-
-#ifdef USE_NON_CAPITAL
-	#ifdef __cplusplus
-		#define automatski auto
-		#define pokusaj try
-		#define uhvati catch
-	#endif
-
-	#define vrati return
 #endif
 
 /* printing and user input function - ispis i unos podataka */
@@ -217,21 +199,6 @@
 	#define c_unesi scanf // #include <stdio.h>
 #endif
 
-/* functions - funckcije */
-#define SUSTAV system
-
-#ifdef __cplusplus
-	#define PRETVORI_U_C_STR c_str
-#endif
-
-#ifdef USE_NON_CAPITAL
-	#define sustav system
-
-	#ifdef __cplusplus
-		#define pretvori_u_c_str c_str
-	#endif
-#endif
-
 /* memory - memorija */
 #ifdef __cplusplus
 	#define NOVO new
@@ -251,4 +218,72 @@
 	#define alociraj malloc
 	#define ponovo_alociraj realloc
 	#define oslobodi free
+#endif
+
+/* std:: */
+#ifdef __cplusplus
+	#define MAPA std::map
+	#define VEKTOR std::vector
+	#define STD_FUNKCIJA std::function
+#endif
+
+#if defined(USE_NON_CAPITAL) && defined(__cplusplus)
+	#define mapa std::map
+	#define vektor std::vector
+	#define std_funkcija std::function
+#endif
+
+/* other - drugo */
+#ifdef __cplusplus
+	#define POKUSAJ try
+	#define UHVATI catch
+#endif
+
+#define AUTOMATSKI auto
+#define VRATI return
+
+#ifdef USE_NON_CAPITAL
+	#ifdef __cplusplus
+		#define pokusaj try
+		#define uhvati catch
+	#endif
+
+	#define automatski auto
+	#define vrati return
+#endif
+
+/* functions - funckcije */
+#define SUSTAV system
+
+#ifdef __cplusplus
+	#define PRETVORI_U_C_STR c_str
+#endif
+
+#define STR_KOPIRAJ strcpy
+#define STR_USPOREDI strcmp
+#define STR_DULJINA strlen
+
+#ifdef USE_NON_CAPITAL
+	#define sustav system
+
+	#ifdef __cplusplus
+		#define pretvori_u_c_str c_str
+	#endif
+
+	#define str_kopiraj strcpy
+	#define str_usporedi strcmp
+	#define str_duljina strlen
+#endif
+
+/* C++ 20 */
+#if __cplusplus >= 202002L
+	#define UVEZI import
+    #define IZVEZI export
+	#define MODUL module
+
+	#ifdef USE_NON_CAPITAL
+		#define uvezi import
+		#define izvezi export
+		#define modul module
+	#endif
 #endif
