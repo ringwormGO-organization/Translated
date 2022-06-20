@@ -24,7 +24,7 @@ POCETAK_PROGRAMA_ARGUMENTI
 
 	inace
 	{
-		cpp_ispis << "Nista nije pronadjeno!" << ZAVRSI_LINIJU;
+		cpp_ispis << "Nista nije pronadjeno!" << zavrsi_liniju;
 	}
 
 	znak kraj;
