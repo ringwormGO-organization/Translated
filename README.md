@@ -46,7 +46,9 @@ For now here is only capital letters. You can change it by yourself. Also you ne
 Za sada su ovdje samo velika slova. Možete to promijeniti sami. Također trebate podržavati UTF-8 "encoding".
 
 ## Translated stuff - Prevođene stvari
-If you want include header files in Translated.hpp or use non-capital translation, enable or disable settings. | Ako želite unijeti header datoteke ili koristi prijevod koji ne koristi velika slova za prijevod, provjerite postavke.
+If you want include header files in Translated.hpp or use non-capital translation, enable or disable settings.
+
+Ako želite unijeti header datoteke ili koristi prijevod koji ne koristi velika slova za prijevod, provjerite postavke.
 
 ### Settings
 1. `INCLUDE_HEADER_FILES` unesi header datoteke
